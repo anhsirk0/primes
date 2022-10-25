@@ -31,7 +31,7 @@ USAGE:
 OPTIONS:
     -c, --check <CHECK>...    Check if a number(s) is prime
     -h, --help                Print help information
-    -n, --n <N>               Print first n primes [default: 0]
+    -n, --n <N>               Print first n primes [default: 1]
     -r, --range <RANGE>...    Print primes between two numbers
     -V, --version             Print version information
 ```

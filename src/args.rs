@@ -9,10 +9,17 @@ pub struct PrimesArgs {
     pub check: Vec<u64>,
 
     /// Print primes between two numbers.
-    #[clap(short, long, value_parser, multiple = true, min_values = 2)]
+    #[clap(
+        short,
+        long,
+        value_parser,
+        multiple = true,
+        min_values = 2,
+        max_values = 2
+    )]
     pub range: Vec<usize>,
 
     /// Print first n primes.
-    #[clap(short, long, value_parser, default_value = "0")]
+    #[clap(short, long, value_parser, default_value_t = 1)]
     pub n: usize,
 }
